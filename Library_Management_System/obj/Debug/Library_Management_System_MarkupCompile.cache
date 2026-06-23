@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\2026_Hitech\github\C# WPF 기말\Library_Management_System\Library_Management_System\obj\Debug\
+D:\C#_Final_Test\Library_Management_System\obj\Debug\
 Library_Management_System
 none
 false
 DEBUG;TRACE
-D:\2026_Hitech\github\C# WPF 기말\Library_Management_System\Library_Management_System\App.xaml
+D:\C#_Final_Test\Library_Management_System\App.xaml
 2-86694212
 
-10406933968
-128-620590797
+10448194876
+128-1573716939
 MainWindow.xaml;Views\BooksView.xaml;
 
-True
+False
 

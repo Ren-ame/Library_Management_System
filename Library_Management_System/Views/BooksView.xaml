@@ -22,9 +22,9 @@
             <TextBox x:Name="TxtISBN" Width="120"/>
             <Label Content="수량"/>
             <TextBox x:Name="TxtQuantity" Width="60"/>
-            <Button x:Name="BtnAdd" Content="추가" Margin="8 0 0 0"/>
-            <Button x:Name="BtnEdit" Content="수정"/>
-            <Button x:Name="BtnDelete" Content="삭제"/>
+            <Button x:Name="BtnAdd" Content="추가" Margin="8 0 0 0" Click="BtnAdd_Click"/>
+            <Button x:Name="BtnEdit" Content="수정" Click="BtnEdit_Click"/>
+            <Button x:Name="BtnDelete" Content="삭제" Click="BtnDelete_Click"/>
         </StackPanel>
         <DataGrid x:Name="BooksGrid" Grid.Row="1" Margin="8"
                   AutoGenerateColumns="False"

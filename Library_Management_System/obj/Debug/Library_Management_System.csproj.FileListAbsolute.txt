@@ -31,3 +31,36 @@ C:\Users\Con92\Documents\Claude\Projects\C# WPF 기말\Library_Management_System
 C:\Users\Con92\Documents\Claude\Projects\C# WPF 기말\Library_Management_System\Library_Management_System\obj\Debug\Views\BooksView.g.cs
 C:\Users\Con92\Documents\Claude\Projects\C# WPF 기말\Library_Management_System\Library_Management_System\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\Con92\Documents\Claude\Projects\C# WPF 기말\Library_Management_System\Library_Management_System\obj\Debug\Views\BooksView.baml
+D:\C#_Final_Test\Library_Management_System\obj\Debug\Library_Management_System.csproj.AssemblyReference.cache
+D:\C#_Final_Test\Library_Management_System\obj\Debug\Library_Management_System.exe.config
+D:\C#_Final_Test\Library_Management_System\obj\Debug\MainWindow.g.cs
+D:\C#_Final_Test\Library_Management_System\obj\Debug\Views\BooksView.g.cs
+D:\C#_Final_Test\Library_Management_System\obj\Debug\App.g.cs
+D:\C#_Final_Test\Library_Management_System\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\C#_Final_Test\Library_Management_System\obj\Debug\Library_Management_System_MarkupCompile.cache
+D:\C#_Final_Test\Library_Management_System\obj\Debug\Library_Management_System_MarkupCompile.lref
+D:\C#_Final_Test\Library_Management_System\obj\Debug\Library_Management_System.exe
+D:\C#_Final_Test\Library_Management_System\obj\Debug\Library_Management_System.pdb
+D:\C#_Final_Test\Library_Management_System\bin\Debug\Library_Management_System.exe.config
+D:\C#_Final_Test\Library_Management_System\bin\Debug\Library_Management_System.exe
+D:\C#_Final_Test\Library_Management_System\bin\Debug\Library_Management_System.pdb
+D:\C#_Final_Test\Library_Management_System\bin\Debug\Microsoft.Data.Sqlite.dll
+D:\C#_Final_Test\Library_Management_System\bin\Debug\SQLitePCLRaw.batteries_v2.dll
+D:\C#_Final_Test\Library_Management_System\bin\Debug\SQLitePCLRaw.core.dll
+D:\C#_Final_Test\Library_Management_System\bin\Debug\SQLitePCLRaw.provider.dynamic_cdecl.dll
+D:\C#_Final_Test\Library_Management_System\bin\Debug\System.Buffers.dll
+D:\C#_Final_Test\Library_Management_System\bin\Debug\System.Memory.dll
+D:\C#_Final_Test\Library_Management_System\bin\Debug\System.Numerics.Vectors.dll
+D:\C#_Final_Test\Library_Management_System\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\C#_Final_Test\Library_Management_System\bin\Debug\Microsoft.Data.Sqlite.xml
+D:\C#_Final_Test\Library_Management_System\bin\Debug\System.Buffers.xml
+D:\C#_Final_Test\Library_Management_System\bin\Debug\System.Memory.xml
+D:\C#_Final_Test\Library_Management_System\bin\Debug\System.Numerics.Vectors.xml
+D:\C#_Final_Test\Library_Management_System\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\C#_Final_Test\Library_Management_System\obj\Debug\MainWindow.baml
+D:\C#_Final_Test\Library_Management_System\obj\Debug\Views\BooksView.baml
+D:\C#_Final_Test\Library_Management_System\obj\Debug\Library_Management_System.g.resources
+D:\C#_Final_Test\Library_Management_System\obj\Debug\Library_Management_System.Properties.Resources.resources
+D:\C#_Final_Test\Library_Management_System\obj\Debug\Library_Management_System.csproj.GenerateResource.cache
+D:\C#_Final_Test\Library_Management_System\obj\Debug\Library_Management_System.csproj.CoreCompileInputs.cache
+D:\C#_Final_Test\Library_Management_System\obj\Debug\Library_.A652AF67.Up2Date

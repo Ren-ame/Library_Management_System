@@ -15,13 +15,13 @@ Library_Management_System/
 │   ├── Book.cs         ✅ 완료
 │   ├── Member.cs       ✅ 완료
 │   └── Loan.cs         ✅ 완료
-├── Datebase/           ⚠️ 폴더명 오타 (Database → Datebase) 그대로 유지
-│   └── DbHelper.cs     🔄 진행중
+├── Database/           ✅ (원래 Datebase 오타였으나 Database로 수정 완료)
+│   └── DbHelper.cs     ✅ 완료
 ├── Views/
-│   ├── BooksView.xaml  🔄 진행중 (XAML 완료, 코드비하인드 미완)
+│   ├── BooksView.xaml  ✅ 완료 (XAML + 코드비하인드)
 │   ├── MembersView     ❌ 미작성
 │   └── LoansView       ❌ 미작성
-├── App.xaml.cs         ✅ OnStartup에서 DbHelper.InitializeDatabase() 호출
+├── App.xaml.cs         ✅ SQLitePCL.Batteries_V2.Init() + InitializeDatabase() 호출
 └── MainWindow.xaml     ✅ TabControl 3탭 (도서관리/회원관리/대출반납)
 ```
 
@@ -30,13 +30,19 @@ Library_Management_System/
 - Member: MemberId(PK AUTO), Name, Phone, Email
 - Loan: LoanId(PK AUTO), BookId(FK), MemberId(FK), LoanDate, DueDate, ReturnDate(nullable)
 
+## 개발 내역
+### 2026-06-24 (01:43 KST)
+- DbHelper.cs: GetAllBooks(), AddBook(), UpdateBook(), DeleteBook() 구현 완료
+- BooksView.xaml.cs: LoadBooks(), BtnAdd_Click(), BtnDelete_Click() 구현 완료 (BtnEdit_Click은 빈 상태)
+- e_sqlite3.dll 누락 문제 해결 → bin\Debug\runtimes\win-x86\native\ 에 수동 복사
+- 입력값 예외처리 추가 (int.TryParse, IsNullOrWhiteSpace)
+- 도서 추가/삭제 동작 확인 완료
+
 ## 다음 할 일
-1. DbHelper.cs에 GetAllBooks() 메서드 추가 (List<Book> 반환)
-2. DbHelper.cs에 AddBook(), UpdateBook(), DeleteBook() 추가
-3. BooksView.xaml.cs 코드비하인드 작성 (목록 로드 + 버튼 이벤트)
-4. MembersView 생성 및 구현
-5. LoansView 생성 및 구현
-6. 검색 기능 추가
+1. BtnEdit_Click 구현 (선택한 행 → 텍스트박스 채우기 → 수정 저장)
+2. MembersView 생성 및 구현
+3. LoansView 생성 및 구현
+4. 검색 기능 추가
 
 ## 코딩 스타일 참고
 - 코드를 대신 작성하지 말고 설명 후 본인이 직접 작성하도록 유도

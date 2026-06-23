@@ -1,4 +1,4 @@
-﻿using Library_Management_System.Datebase;
+﻿using Library_Management_System.Database;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -17,6 +17,8 @@ namespace Library_Management_System
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
+
+            SQLitePCL.Batteries_V2.Init();
 
             DbHelper.InitializeDatabase();
         }

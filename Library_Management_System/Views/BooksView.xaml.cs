@@ -12,17 +12,72 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Library_Management_System.Database;
+using Library_Management_System.Models;
 
 namespace Library_Management_System.Views
 {
-    /// <summary>
-    /// BooksView.xaml에 대한 상호 작용 논리
-    /// </summary>
     public partial class BooksView : UserControl
     {
         public BooksView()
         {
             InitializeComponent();
+            LoadBooks();
         }
+
+        private void LoadBooks()
+        {
+            var books = DbHelper.GetAllBooks();
+
+            BooksGrid.ItemsSource = books;
+        }
+
+        private void BtnAdd_Click(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(TxtTitle.Text) || string.IsNullOrWhiteSpace(TxtAuthor.Text))
+            {
+                MessageBox.Show("제목과 저자는 필수 입력 항목입니다.");
+                return;
+            }
+
+            if (!int.TryParse(TxtQuantity.Text, out int quantity))
+            {
+                MessageBox.Show("수량은 숫자로 입력해주세요.");
+                return;
+            }
+
+            var book = new Book
+            {
+                Title = TxtTitle.Text,
+                Author = TxtAuthor.Text,
+                ISBN = TxtISBN.Text,
+                TotalQuantity = int.Parse(TxtQuantity.Text),
+                AvailableQuantity = int.Parse(TxtQuantity.Text)
+            };
+
+            DbHelper.AddBook(book);
+            LoadBooks();
+        }
+
+        private void BtnEdit_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BtnDelete_Click(object sender, RoutedEventArgs e)
+        {
+            var selectedBook = (Book)BooksGrid.SelectedItem;
+
+            if (selectedBook != null)
+            {
+                DbHelper.DeleteBook(selectedBook.BookId);
+                LoadBooks();
+            }
+            else
+            {
+                MessageBox.Show("선택된 책이 없습니다.");
+            }
+        }
+
     }
 }
