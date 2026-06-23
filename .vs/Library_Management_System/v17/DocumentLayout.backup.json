@@ -1,0 +1,176 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Con92\\Documents\\Claude\\Projects\\C# WPF \uAE30\uB9D0\\Library_Management_System\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|c:\\users\\con92\\documents\\claude\\projects\\c# wpf \uAE30\uB9D0\\library_management_system\\library_management_system\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|solutionrelative:library_management_system\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|c:\\users\\con92\\documents\\claude\\projects\\c# wpf \uAE30\uB9D0\\library_management_system\\library_management_system\\views\\booksview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|solutionrelative:library_management_system\\views\\booksview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|c:\\users\\con92\\documents\\claude\\projects\\c# wpf \uAE30\uB9D0\\library_management_system\\library_management_system\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|solutionrelative:library_management_system\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|c:\\users\\con92\\documents\\claude\\projects\\c# wpf \uAE30\uB9D0\\library_management_system\\library_management_system\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|solutionrelative:library_management_system\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|c:\\users\\con92\\documents\\claude\\projects\\c# wpf \uAE30\uB9D0\\library_management_system\\library_management_system\\datebase\\dbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|solutionrelative:library_management_system\\datebase\\dbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|c:\\users\\con92\\documents\\claude\\projects\\c# wpf \uAE30\uB9D0\\library_management_system\\library_management_system\\models\\loan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|solutionrelative:library_management_system\\models\\loan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|c:\\users\\con92\\documents\\claude\\projects\\c# wpf \uAE30\uB9D0\\library_management_system\\library_management_system\\models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|solutionrelative:library_management_system\\models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|c:\\users\\con92\\documents\\claude\\projects\\c# wpf \uAE30\uB9D0\\library_management_system\\library_management_system\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|solutionrelative:library_management_system\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|c:\\users\\con92\\documents\\claude\\projects\\c# wpf \uAE30\uB9D0\\library_management_system\\library_management_system\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|solutionrelative:library_management_system\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Con92\\Documents\\Claude\\Projects\\C# WPF \uAE30\uB9D0\\Library_Management_System\\Library_Management_System\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Library_Management_System\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Con92\\Documents\\Claude\\Projects\\C# WPF \uAE30\uB9D0\\Library_Management_System\\Library_Management_System\\MainWindow.xaml",
+              "RelativeToolTip": "Library_Management_System\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-23T01:56:42.232Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BooksView.xaml",
+              "DocumentMoniker": "C:\\Users\\Con92\\Documents\\Claude\\Projects\\C# WPF \uAE30\uB9D0\\Library_Management_System\\Library_Management_System\\Views\\BooksView.xaml",
+              "RelativeDocumentMoniker": "Library_Management_System\\Views\\BooksView.xaml",
+              "ToolTip": "C:\\Users\\Con92\\Documents\\Claude\\Projects\\C# WPF \uAE30\uB9D0\\Library_Management_System\\Library_Management_System\\Views\\BooksView.xaml",
+              "RelativeToolTip": "Library_Management_System\\Views\\BooksView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-23T02:45:18.523Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Con92\\Documents\\Claude\\Projects\\C# WPF \uAE30\uB9D0\\Library_Management_System\\Library_Management_System\\App.xaml.cs",
+              "RelativeDocumentMoniker": "Library_Management_System\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\Con92\\Documents\\Claude\\Projects\\C# WPF \uAE30\uB9D0\\Library_Management_System\\Library_Management_System\\App.xaml.cs",
+              "RelativeToolTip": "Library_Management_System\\App.xaml.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAABQAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-23T02:39:46.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\Con92\\Documents\\Claude\\Projects\\C# WPF \uAE30\uB9D0\\Library_Management_System\\Library_Management_System\\App.xaml",
+              "RelativeDocumentMoniker": "Library_Management_System\\App.xaml",
+              "ToolTip": "C:\\Users\\Con92\\Documents\\Claude\\Projects\\C# WPF \uAE30\uB9D0\\Library_Management_System\\Library_Management_System\\App.xaml",
+              "RelativeToolTip": "Library_Management_System\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-23T02:37:04.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DbHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Con92\\Documents\\Claude\\Projects\\C# WPF \uAE30\uB9D0\\Library_Management_System\\Library_Management_System\\Datebase\\DbHelper.cs",
+              "RelativeDocumentMoniker": "Library_Management_System\\Datebase\\DbHelper.cs",
+              "ToolTip": "C:\\Users\\Con92\\Documents\\Claude\\Projects\\C# WPF \uAE30\uB9D0\\Library_Management_System\\Library_Management_System\\Datebase\\DbHelper.cs",
+              "RelativeToolTip": "Library_Management_System\\Datebase\\DbHelper.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-23T02:16:18.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Loan.cs",
+              "DocumentMoniker": "C:\\Users\\Con92\\Documents\\Claude\\Projects\\C# WPF \uAE30\uB9D0\\Library_Management_System\\Library_Management_System\\Models\\Loan.cs",
+              "RelativeDocumentMoniker": "Library_Management_System\\Models\\Loan.cs",
+              "ToolTip": "C:\\Users\\Con92\\Documents\\Claude\\Projects\\C# WPF \uAE30\uB9D0\\Library_Management_System\\Library_Management_System\\Models\\Loan.cs",
+              "RelativeToolTip": "Library_Management_System\\Models\\Loan.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-23T02:12:54.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Member.cs",
+              "DocumentMoniker": "C:\\Users\\Con92\\Documents\\Claude\\Projects\\C# WPF \uAE30\uB9D0\\Library_Management_System\\Library_Management_System\\Models\\Member.cs",
+              "RelativeDocumentMoniker": "Library_Management_System\\Models\\Member.cs",
+              "ToolTip": "C:\\Users\\Con92\\Documents\\Claude\\Projects\\C# WPF \uAE30\uB9D0\\Library_Management_System\\Library_Management_System\\Models\\Member.cs",
+              "RelativeToolTip": "Library_Management_System\\Models\\Member.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-23T02:11:03.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\Con92\\Documents\\Claude\\Projects\\C# WPF \uAE30\uB9D0\\Library_Management_System\\Library_Management_System\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "Library_Management_System\\Models\\Book.cs",
+              "ToolTip": "C:\\Users\\Con92\\Documents\\Claude\\Projects\\C# WPF \uAE30\uB9D0\\Library_Management_System\\Library_Management_System\\Models\\Book.cs",
+              "RelativeToolTip": "Library_Management_System\\Models\\Book.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-23T02:01:57.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Con92\\Documents\\Claude\\Projects\\C# WPF \uAE30\uB9D0\\Library_Management_System\\Library_Management_System\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Library_Management_System\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Con92\\Documents\\Claude\\Projects\\C# WPF \uAE30\uB9D0\\Library_Management_System\\Library_Management_System\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Library_Management_System\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-23T01:56:41.658Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
