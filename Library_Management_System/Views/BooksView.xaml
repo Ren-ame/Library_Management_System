@@ -15,20 +15,21 @@
 
         <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="8">
             <Label Content="제목"/>
-            <TextBox x:Name="TxtTitle" Width="120"/>
+            <TextBox x:Name="TxtTitle" Width="120" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
             <Label Content="저자"/>
-            <TextBox x:Name="TxtAuthor" Width="120"/>
+            <TextBox x:Name="TxtAuthor" Width="120" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
             <Label Content="ISBN"/>
-            <TextBox x:Name="TxtISBN" Width="120"/>
+            <TextBox x:Name="TxtISBN" Width="120" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
             <Label Content="수량"/>
-            <TextBox x:Name="TxtQuantity" Width="60"/>
+            <TextBox x:Name="TxtQuantity" Width="60" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
             <Button x:Name="BtnAdd" Content="추가" Margin="8 0 0 0" Click="BtnAdd_Click"/>
             <Button x:Name="BtnEdit" Content="수정" Click="BtnEdit_Click"/>
             <Button x:Name="BtnDelete" Content="삭제" Click="BtnDelete_Click"/>
         </StackPanel>
         <DataGrid x:Name="BooksGrid" Grid.Row="1" Margin="8"
                   AutoGenerateColumns="False"
-                  IsReadOnly="True">
+                  IsReadOnly="True"
+                  SelectionChanged="BooksGrid_SelectionChanged">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ID" Binding="{Binding BookId}" Width="50"/>
                 <DataGridTextColumn Header="제목" Binding="{Binding Title}" Width="*"/>

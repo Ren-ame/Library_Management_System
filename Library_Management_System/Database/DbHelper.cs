@@ -52,6 +52,7 @@ namespace Library_Management_System.Database
             } 
         }
 
+        #region Book
         public static List<Book> GetAllBooks()
         {
             var books = new List<Book>();
@@ -97,7 +98,7 @@ namespace Library_Management_System.Database
                 command.Parameters.AddWithValue("@ISBN", book.ISBN);
                 command.Parameters.AddWithValue("@TotalQuantity", book.TotalQuantity);
                 command.Parameters.AddWithValue("@AvailableQuantity", book.AvailableQuantity);
-                
+
                 command.ExecuteNonQuery();
             }
         }
@@ -121,7 +122,7 @@ namespace Library_Management_System.Database
                 command.Parameters.AddWithValue("@TotalQuantity", book.TotalQuantity);
                 command.Parameters.AddWithValue("@AvailableQuantity", book.AvailableQuantity);
                 command.Parameters.AddWithValue("@BookId", book.BookId);
-                
+
                 command.ExecuteNonQuery();
             }
         }
@@ -137,11 +138,92 @@ namespace Library_Management_System.Database
                     connection);
 
                 command.Parameters.AddWithValue("@BookId", BookId);
-                
+
                 command.ExecuteNonQuery();
             }
         }
-    }
+        #endregion
 
-    
+        #region Member
+        public static List<Member> GetAllMembers()
+        {
+            var members = new List<Member>();
+            using (var connection = new SqliteConnection(_connectionString))
+            {
+                connection.Open();
+
+                var command = new SqliteCommand("SELECT * FROM Member", connection);
+                using (var reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        members.Add(new Member
+                        {
+                            MemberId = reader.GetInt32(0),
+                            Name = reader.GetString(1),
+                            Phone = reader.GetString(2),
+                            Email = reader.IsDBNull(3) ? string.Empty : reader.GetString(3)
+                        });
+                    }
+                }
+            }
+
+            return members;
+        }
+
+        public static void AddMember(Member member)
+        {
+            using (var connection = new SqliteConnection(_connectionString))
+            {
+                connection.Open();
+                var command = new SqliteCommand(
+                    @"INSERT INTO Member (Name, Phone, Email)
+                      VALUES (@Name, @Phone, @Email)",
+                    connection);
+
+                command.Parameters.AddWithValue("@Name", member.Name);
+                command.Parameters.AddWithValue("@Phone", member.Phone);
+                command.Parameters.AddWithValue("@Email", member.Email);
+
+                command.ExecuteNonQuery();
+            }
+        }
+
+        public static void UpdateMember(Member member)
+        {
+            using (var connection = new SqliteConnection(_connectionString))
+            {
+                connection.Open();
+
+                var command = new SqliteCommand(
+                    @"UPDATE Member
+                      SET Name = @Name, Phone = @Phone, Email = @Email
+                      WHERE MemberId = @MemberId",
+                    connection);
+
+                command.Parameters.AddWithValue("@Name", member.Name);
+                command.Parameters.AddWithValue("@Phone", member.Phone);
+                command.Parameters.AddWithValue("@Email", member.Email);
+                command.Parameters.AddWithValue("@MemberId", member.MemberId);
+
+                command.ExecuteNonQuery();
+            }
+        }
+
+        public static void DeleteMember(int MemberId)
+        {
+            using (var connection = new SqliteConnection(_connectionString))
+            {
+                connection.Open();
+                var command = new SqliteCommand(
+                    @"DELETE FROM Member WHERE MemberId = @MemberId",
+                    connection);
+
+                command.Parameters.AddWithValue("@MemberId", MemberId);
+
+                command.ExecuteNonQuery();
+            }
+        } 
+        #endregion
+    }
 }
