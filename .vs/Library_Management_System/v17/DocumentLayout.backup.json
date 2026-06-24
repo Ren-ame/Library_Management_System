@@ -1,50 +1,74 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\2026_Hitech\\github\\C# WPF \uAE30\uB9D0\\Library_Management_System\\",
+  "WorkspaceRootPath": "D:\\C#_Final_Test\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|d:\\2026_hitech\\github\\c# wpf \uAE30\uB9D0\\library_management_system\\library_management_system\\views\\membersview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|solutionrelative:library_management_system\\views\\membersview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|d:\\c#_final_test\\library_management_system\\views\\loandialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|solutionrelative:library_management_system\\views\\loandialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|D:\\2026_Hitech\\github\\C# WPF \uAE30\uB9D0\\Library_Management_System\\Library_Management_System\\Views\\BooksView.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|solutionrelative:Library_Management_System\\Views\\BooksView.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|d:\\c#_final_test\\library_management_system\\views\\loandialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|solutionrelative:library_management_system\\views\\loandialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|D:\\2026_Hitech\\github\\C# WPF \uAE30\uB9D0\\Library_Management_System\\Library_Management_System\\MainWindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|solutionrelative:Library_Management_System\\MainWindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|d:\\c#_final_test\\library_management_system\\views\\loansview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|solutionrelative:library_management_system\\views\\loansview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|D:\\2026_Hitech\\github\\C# WPF \uAE30\uB9D0\\Library_Management_System\\Library_Management_System\\Views\\BooksView.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|solutionrelative:Library_Management_System\\Views\\BooksView.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|D:\\2026_Hitech\\github\\C# WPF \uAE30\uB9D0\\Library_Management_System\\Library_Management_System\\MainWindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|solutionrelative:Library_Management_System\\MainWindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|d:\\2026_hitech\\github\\c# wpf \uAE30\uB9D0\\library_management_system\\library_management_system\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|solutionrelative:library_management_system\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|D:\\2026_Hitech\\github\\C# WPF \uAE30\uB9D0\\Library_Management_System\\Library_Management_System\\Database\\DbHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|D:\\C#_Final_Test\\Library_Management_System\\Database\\DbHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|solutionrelative:Library_Management_System\\Database\\DbHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|D:\\2026_Hitech\\github\\C# WPF \uAE30\uB9D0\\Library_Management_System\\Library_Management_System\\App.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|solutionrelative:Library_Management_System\\App.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|d:\\c#_final_test\\library_management_system\\views\\loansview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|solutionrelative:library_management_system\\views\\loansview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|D:\\2026_Hitech\\github\\C# WPF \uAE30\uB9D0\\Library_Management_System\\Library_Management_System\\Models\\Loan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|d:\\c#_final_test\\library_management_system\\views\\membersview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|solutionrelative:library_management_system\\views\\membersview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|d:\\c#_final_test\\library_management_system\\views\\returndialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|solutionrelative:library_management_system\\views\\returndialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|D:\\C#_Final_Test\\Library_Management_System\\Views\\BooksView.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|solutionrelative:Library_Management_System\\Views\\BooksView.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|d:\\c#_final_test\\library_management_system\\views\\membersview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|solutionrelative:library_management_system\\views\\membersview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|D:\\C#_Final_Test\\Library_Management_System\\Models\\Loan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|solutionrelative:Library_Management_System\\Models\\Loan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|D:\\2026_Hitech\\github\\C# WPF \uAE30\uB9D0\\Library_Management_System\\Library_Management_System\\Models\\Member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|D:\\C#_Final_Test\\Library_Management_System\\MainWindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|solutionrelative:Library_Management_System\\MainWindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|D:\\C#_Final_Test\\Library_Management_System\\Views\\BooksView.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|solutionrelative:Library_Management_System\\Views\\BooksView.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|D:\\C#_Final_Test\\Library_Management_System\\Models\\Member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|solutionrelative:Library_Management_System\\Models\\Member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|D:\\2026_Hitech\\github\\C# WPF \uAE30\uB9D0\\Library_Management_System\\Library_Management_System\\Models\\Book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|D:\\C#_Final_Test\\Library_Management_System\\Models\\Book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|solutionrelative:Library_Management_System\\Models\\Book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|D:\\C#_Final_Test\\Library_Management_System\\MainWindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|solutionrelative:Library_Management_System\\MainWindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|D:\\C#_Final_Test\\library_management_system\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|solutionrelative:library_management_system\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|D:\\C#_Final_Test\\Library_Management_System\\App.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|solutionrelative:Library_Management_System\\App.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,15 +78,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "D:\\2026_Hitech\\github\\C# WPF \uAE30\uB9D0\\Library_Management_System\\Library_Management_System\\MainWindow.xaml",
+              "DocumentMoniker": "D:\\C#_Final_Test\\Library_Management_System\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Library_Management_System\\MainWindow.xaml",
-              "ToolTip": "D:\\2026_Hitech\\github\\C# WPF \uAE30\uB9D0\\Library_Management_System\\Library_Management_System\\MainWindow.xaml",
+              "ToolTip": "D:\\C#_Final_Test\\Library_Management_System\\MainWindow.xaml",
               "RelativeToolTip": "Library_Management_System\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-06-23T01:56:42.232Z",
@@ -71,11 +95,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 11,
               "Title": "BooksView.xaml",
-              "DocumentMoniker": "D:\\2026_Hitech\\github\\C# WPF \uAE30\uB9D0\\Library_Management_System\\Library_Management_System\\Views\\BooksView.xaml",
+              "DocumentMoniker": "D:\\C#_Final_Test\\Library_Management_System\\Views\\BooksView.xaml",
               "RelativeDocumentMoniker": "Library_Management_System\\Views\\BooksView.xaml",
-              "ToolTip": "D:\\2026_Hitech\\github\\C# WPF \uAE30\uB9D0\\Library_Management_System\\Library_Management_System\\Views\\BooksView.xaml",
+              "ToolTip": "D:\\C#_Final_Test\\Library_Management_System\\Views\\BooksView.xaml",
               "RelativeToolTip": "Library_Management_System\\Views\\BooksView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-06-23T02:45:18.523Z",
@@ -84,104 +108,140 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "MembersView.xaml",
-              "DocumentMoniker": "D:\\2026_Hitech\\github\\C# WPF \uAE30\uB9D0\\Library_Management_System\\Library_Management_System\\Views\\MembersView.xaml",
+              "DocumentMoniker": "D:\\C#_Final_Test\\Library_Management_System\\Views\\MembersView.xaml",
               "RelativeDocumentMoniker": "Library_Management_System\\Views\\MembersView.xaml",
-              "ToolTip": "D:\\2026_Hitech\\github\\C# WPF \uAE30\uB9D0\\Library_Management_System\\Library_Management_System\\Views\\MembersView.xaml",
+              "ToolTip": "D:\\C#_Final_Test\\Library_Management_System\\Views\\MembersView.xaml",
               "RelativeToolTip": "Library_Management_System\\Views\\MembersView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-06-24T04:06:56.18Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "D:\\2026_Hitech\\github\\C# WPF \uAE30\uB9D0\\Library_Management_System\\Library_Management_System\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Library_Management_System\\MainWindow.xaml.cs",
-              "ToolTip": "D:\\2026_Hitech\\github\\C# WPF \uAE30\uB9D0\\Library_Management_System\\Library_Management_System\\MainWindow.xaml.cs",
-              "RelativeToolTip": "Library_Management_System\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-23T01:56:41.658Z",
+              "DocumentIndex": 4,
+              "Title": "LoansView.xaml",
+              "DocumentMoniker": "D:\\C#_Final_Test\\Library_Management_System\\Views\\LoansView.xaml",
+              "RelativeDocumentMoniker": "Library_Management_System\\Views\\LoansView.xaml",
+              "ToolTip": "D:\\C#_Final_Test\\Library_Management_System\\Views\\LoansView.xaml",
+              "RelativeToolTip": "Library_Management_System\\Views\\LoansView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-24T13:50:19.997Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "DbHelper.cs",
+              "DocumentMoniker": "D:\\C#_Final_Test\\Library_Management_System\\Database\\DbHelper.cs",
+              "RelativeDocumentMoniker": "Library_Management_System\\Database\\DbHelper.cs",
+              "ToolTip": "D:\\C#_Final_Test\\Library_Management_System\\Database\\DbHelper.cs",
+              "RelativeToolTip": "Library_Management_System\\Database\\DbHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-23T02:16:18.599Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoanDialog.xaml",
+              "DocumentMoniker": "D:\\C#_Final_Test\\Library_Management_System\\Views\\LoanDialog.xaml",
+              "RelativeDocumentMoniker": "Library_Management_System\\Views\\LoanDialog.xaml",
+              "ToolTip": "D:\\C#_Final_Test\\Library_Management_System\\Views\\LoanDialog.xaml",
+              "RelativeToolTip": "Library_Management_System\\Views\\LoanDialog.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-24T15:16:05.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoanDialog.xaml.cs",
+              "DocumentMoniker": "D:\\C#_Final_Test\\Library_Management_System\\Views\\LoanDialog.xaml.cs",
+              "RelativeDocumentMoniker": "Library_Management_System\\Views\\LoanDialog.xaml.cs",
+              "ToolTip": "D:\\C#_Final_Test\\Library_Management_System\\Views\\LoanDialog.xaml.cs",
+              "RelativeToolTip": "Library_Management_System\\Views\\LoanDialog.xaml.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAmwDkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-24T16:18:56.692Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Views\\LoansView.xaml.cs",
+              "DocumentMoniker": "D:\\C#_Final_Test\\Library_Management_System\\Views\\LoansView.xaml.cs",
+              "RelativeDocumentMoniker": "Library_Management_System\\Views\\LoansView.xaml.cs",
+              "ToolTip": "D:\\C#_Final_Test\\Library_Management_System\\Views\\LoansView.xaml.cs",
+              "RelativeToolTip": "Library_Management_System\\Views\\LoansView.xaml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAmwDgAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-24T14:21:43.997Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ReturnDialog.xaml",
+              "DocumentMoniker": "D:\\C#_Final_Test\\Library_Management_System\\Views\\ReturnDialog.xaml",
+              "RelativeDocumentMoniker": "Library_Management_System\\Views\\ReturnDialog.xaml",
+              "ToolTip": "D:\\C#_Final_Test\\Library_Management_System\\Views\\ReturnDialog.xaml",
+              "RelativeToolTip": "Library_Management_System\\Views\\ReturnDialog.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-24T15:19:21.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "BooksView.xaml.cs",
-              "DocumentMoniker": "D:\\2026_Hitech\\github\\C# WPF \uAE30\uB9D0\\Library_Management_System\\Library_Management_System\\Views\\BooksView.xaml.cs",
+              "DocumentMoniker": "D:\\C#_Final_Test\\Library_Management_System\\Views\\BooksView.xaml.cs",
               "RelativeDocumentMoniker": "Library_Management_System\\Views\\BooksView.xaml.cs",
-              "ToolTip": "D:\\2026_Hitech\\github\\C# WPF \uAE30\uB9D0\\Library_Management_System\\Library_Management_System\\Views\\BooksView.xaml.cs",
+              "ToolTip": "D:\\C#_Final_Test\\Library_Management_System\\Views\\BooksView.xaml.cs",
               "RelativeToolTip": "Library_Management_System\\Views\\BooksView.xaml.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAADwv5AAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAE4AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-23T03:03:46.816Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "D:\\2026_Hitech\\github\\C# WPF \uAE30\uB9D0\\Library_Management_System\\Library_Management_System\\App.xaml.cs",
-              "RelativeDocumentMoniker": "Library_Management_System\\App.xaml.cs",
-              "ToolTip": "D:\\2026_Hitech\\github\\C# WPF \uAE30\uB9D0\\Library_Management_System\\Library_Management_System\\App.xaml.cs",
-              "RelativeToolTip": "Library_Management_System\\App.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAawBoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-23T02:39:46.487Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DbHelper.cs",
-              "DocumentMoniker": "D:\\2026_Hitech\\github\\C# WPF \uAE30\uB9D0\\Library_Management_System\\Library_Management_System\\Database\\DbHelper.cs",
-              "RelativeDocumentMoniker": "Library_Management_System\\Database\\DbHelper.cs",
-              "ToolTip": "D:\\2026_Hitech\\github\\C# WPF \uAE30\uB9D0\\Library_Management_System\\Library_Management_System\\Database\\DbHelper.cs",
-              "RelativeToolTip": "Library_Management_System\\Database\\DbHelper.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-23T02:16:18.599Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "App.xaml",
-              "DocumentMoniker": "D:\\2026_Hitech\\github\\C# WPF \uAE30\uB9D0\\Library_Management_System\\Library_Management_System\\App.xaml",
-              "RelativeDocumentMoniker": "Library_Management_System\\App.xaml",
-              "ToolTip": "D:\\2026_Hitech\\github\\C# WPF \uAE30\uB9D0\\Library_Management_System\\Library_Management_System\\App.xaml",
-              "RelativeToolTip": "Library_Management_System\\App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-06-23T02:37:04.65Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "MembersView.xaml.cs",
+              "DocumentMoniker": "D:\\C#_Final_Test\\Library_Management_System\\Views\\MembersView.xaml.cs",
+              "RelativeDocumentMoniker": "Library_Management_System\\Views\\MembersView.xaml.cs",
+              "ToolTip": "D:\\C#_Final_Test\\Library_Management_System\\Views\\MembersView.xaml.cs",
+              "RelativeToolTip": "Library_Management_System\\Views\\MembersView.xaml.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAIsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-24T10:43:14.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Loan.cs",
-              "DocumentMoniker": "D:\\2026_Hitech\\github\\C# WPF \uAE30\uB9D0\\Library_Management_System\\Library_Management_System\\Models\\Loan.cs",
+              "DocumentMoniker": "D:\\C#_Final_Test\\Library_Management_System\\Models\\Loan.cs",
               "RelativeDocumentMoniker": "Library_Management_System\\Models\\Loan.cs",
-              "ToolTip": "D:\\2026_Hitech\\github\\C# WPF \uAE30\uB9D0\\Library_Management_System\\Library_Management_System\\Models\\Loan.cs",
+              "ToolTip": "D:\\C#_Final_Test\\Library_Management_System\\Models\\Loan.cs",
               "RelativeToolTip": "Library_Management_System\\Models\\Loan.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-23T02:12:54.044Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "Member.cs",
-              "DocumentMoniker": "D:\\2026_Hitech\\github\\C# WPF \uAE30\uB9D0\\Library_Management_System\\Library_Management_System\\Models\\Member.cs",
+              "DocumentMoniker": "D:\\C#_Final_Test\\Library_Management_System\\Models\\Member.cs",
               "RelativeDocumentMoniker": "Library_Management_System\\Models\\Member.cs",
-              "ToolTip": "D:\\2026_Hitech\\github\\C# WPF \uAE30\uB9D0\\Library_Management_System\\Library_Management_System\\Models\\Member.cs",
+              "ToolTip": "D:\\C#_Final_Test\\Library_Management_System\\Models\\Member.cs",
               "RelativeToolTip": "Library_Management_System\\Models\\Member.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -190,15 +250,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "Book.cs",
-              "DocumentMoniker": "D:\\2026_Hitech\\github\\C# WPF \uAE30\uB9D0\\Library_Management_System\\Library_Management_System\\Models\\Book.cs",
+              "DocumentMoniker": "D:\\C#_Final_Test\\Library_Management_System\\Models\\Book.cs",
               "RelativeDocumentMoniker": "Library_Management_System\\Models\\Book.cs",
-              "ToolTip": "D:\\2026_Hitech\\github\\C# WPF \uAE30\uB9D0\\Library_Management_System\\Library_Management_System\\Models\\Book.cs",
+              "ToolTip": "D:\\C#_Final_Test\\Library_Management_System\\Models\\Book.cs",
               "RelativeToolTip": "Library_Management_System\\Models\\Book.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-23T02:01:57.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\C#_Final_Test\\Library_Management_System\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Library_Management_System\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\C#_Final_Test\\Library_Management_System\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Library_Management_System\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-23T01:56:41.658Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\C#_Final_Test\\Library_Management_System\\App.xaml.cs",
+              "RelativeDocumentMoniker": "Library_Management_System\\App.xaml.cs",
+              "ToolTip": "D:\\C#_Final_Test\\Library_Management_System\\App.xaml.cs",
+              "RelativeToolTip": "Library_Management_System\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAawBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-23T02:39:46.487Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\C#_Final_Test\\Library_Management_System\\App.xaml",
+              "RelativeDocumentMoniker": "Library_Management_System\\App.xaml",
+              "ToolTip": "D:\\C#_Final_Test\\Library_Management_System\\App.xaml",
+              "RelativeToolTip": "Library_Management_System\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-23T02:37:04.65Z",
               "EditorCaption": ""
             }
           ]

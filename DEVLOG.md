@@ -21,3 +21,30 @@
 ### 다음 작업
 - LoansView 구현 (대출/반납)
 - 검색 기능
+
+---
+
+## 2026-06-25
+
+### 작업 내용
+- Loan.cs: BookTitle, MemberName, MemberPhone 필드 추가, Status 프로퍼티 추가 (실시간 계산)
+- DbHelper.cs Loan 영역 추가:
+  - GetAllLoans() — JOIN으로 회원명/도서명 포함
+  - AddLoan() — AvailableQuantity -1 포함
+  - ReturnLoan(loanId, bookId, returnDate) — AvailableQuantity +1 포함
+  - GetLoansByMemberName(), GetLoansByBookTitle() — LIKE 검색
+  - GetLoanStateByMemberName() — 대출중인 것만 (반납 팝업용)
+  - GetMemberByName(), GetBookByTitle() — 대출 등록 시 ID 조회용
+- LoansView.xaml: 검색 행 + DataGrid + 오른쪽 버튼 구성 완료
+- LoansView.xaml.cs: LoadLoans(), BtnSearch_Click(), BtnLoan_Click() 완료
+- MainWindow.xaml: 3탭 모두 연결 완료
+- LoanDialog.xaml + .cs: 대출 등록 팝업 완료 (placeholder, DatePicker +7일 자동, 유효성검사)
+
+### 이슈 및 해결
+- e_sqlite3.dll 위치: bin\Debug\runtimes\win-x86\native\ 에 수동 복사 필요
+- git index.lock 충돌 → 수동 삭제 필요
+
+### 다음 작업
+- ReturnDialog.xaml + .cs 작성
+- LoansView.xaml.cs BtnReturn_Click 연결
+- 빌드 및 전체 테스트

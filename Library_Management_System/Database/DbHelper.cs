@@ -142,6 +142,35 @@ namespace Library_Management_System.Database
                 command.ExecuteNonQuery();
             }
         }
+
+        public static Book GetBookByTitle(string title)
+        {
+            Book book = null;
+            using (var connection = new SqliteConnection(_connectionString))
+            {
+                connection.Open();
+                var command = new SqliteCommand(
+                    @"SELECT * FROM Book WHERE Title = @Title",
+                    connection);
+                command.Parameters.AddWithValue("@Title", title);
+                using (var reader = command.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        book = new Book
+                        {
+                            BookId = reader.GetInt32(0),
+                            Title = reader.GetString(1),
+                            Author = reader.GetString(2),
+                            ISBN = reader.IsDBNull(3) ? string.Empty : reader.GetString(3),
+                            TotalQuantity = reader.GetInt32(4),
+                            AvailableQuantity = reader.GetInt32(5)
+                        };
+                    }
+                }
+            }
+            return book;
+        }
         #endregion
 
         #region Member
@@ -223,7 +252,244 @@ namespace Library_Management_System.Database
 
                 command.ExecuteNonQuery();
             }
-        } 
+        }
+
+        public static Member GetMemberByName(string name)
+        {
+            Member member = null;
+            using (var connection = new SqliteConnection(_connectionString))
+            {
+                connection.Open();
+                var command = new SqliteCommand(
+                    @"SELECT * FROM Member WHERE Name = @Name",
+                    connection);
+                command.Parameters.AddWithValue("@Name", name);
+                using (var reader = command.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        member = new Member
+                        {
+                            MemberId = reader.GetInt32(0),
+                            Name = reader.GetString(1),
+                            Phone = reader.GetString(2),
+                            Email = reader.IsDBNull(3) ? string.Empty : reader.GetString(3)
+                        };
+                    }
+                }
+            }
+            return member;
+        }
         #endregion
-    }
+
+        #region Loan
+        public static List<Loan> GetAllLoans()
+        {
+            var loans = new List<Loan>();
+            using (var connection = new SqliteConnection(_connectionString))
+            {
+                connection.Open();
+
+                var command = new SqliteCommand(
+                    @"SELECT Loan.*, Book.Title, Member.Name, Member.Phone
+                      FROM Loan
+                      JOIN Book ON Loan.BookId = Book.BookId
+                      JOIN Member ON Loan.MemberId = Member.MemberId",
+                    connection);
+                using (var reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        loans.Add(new Loan
+                        {
+                            LoanId = reader.GetInt32(0),
+                            BookId = reader.GetInt32(1),
+                            MemberId = reader.GetInt32(2),
+                            LoanDate = DateTime.Parse(reader.GetString(3)),
+                            DueDate = DateTime.Parse(reader.GetString(4)),
+                            ReturnDate = reader.IsDBNull(5) ? (DateTime?)null : DateTime.Parse(reader.GetString(5)),
+                            BookTitle = reader.GetString(6),
+                            MemberName = reader.GetString(7),
+                            MemberPhone = reader.GetString(8)
+                        });
+                    }
+                }
+            }
+
+            return loans;
+        }
+
+        public static void AddLoan(Loan loan)
+        {
+            using (var connection = new SqliteConnection(_connectionString))
+            {
+                connection.Open();
+
+                var command = new SqliteCommand(
+                    @"INSERT INTO Loan (BookId, MemberId, LoanDate, DueDate, ReturnDate)
+                      VALUES (@BookId, @MemberId, @LoanDate, @DueDate, @ReturnDate)",
+                    connection);
+
+                command.Parameters.AddWithValue("@BookId", loan.BookId);
+                command.Parameters.AddWithValue("@MemberId", loan.MemberId);
+                command.Parameters.AddWithValue("@LoanDate", loan.LoanDate.ToString("yyyy-MM-dd"));
+                command.Parameters.AddWithValue("@DueDate", loan.DueDate.ToString("yyyy-MM-dd"));
+                command.Parameters.AddWithValue("@ReturnDate", loan.ReturnDate.HasValue ? loan.ReturnDate.Value.ToString("yyyy-MM-dd") : (object)DBNull.Value);
+
+                command.ExecuteNonQuery();
+
+                var updateCommand = new SqliteCommand(
+                    @"UPDATE Book SET AvailableQuantity = AvailableQuantity - 1
+                      WHERE BookId = @BookId",
+                    connection);
+
+                updateCommand.Parameters.AddWithValue("@BookId", loan.BookId);
+
+                updateCommand.ExecuteNonQuery();
+            }
+        }
+
+        public static void ReturnLoan(int loanId, int bookId, DateTime returnDate)
+        {
+            using (var connection = new SqliteConnection(_connectionString))
+            {
+                connection.Open();
+
+                var command = new SqliteCommand(
+                    @"UPDATE Loan SET ReturnDate = @ReturnDate
+                      WHERE LoanId = @LoanId",
+                    connection);
+
+                command.Parameters.AddWithValue("@ReturnDate", returnDate.ToString("yyyy-MM-dd"));
+                command.Parameters.AddWithValue("@LoanId", loanId);
+
+                command.ExecuteNonQuery();
+
+                var updateCommand = new SqliteCommand(
+                    @"UPDATE Book SET AvailableQuantity = AvailableQuantity + 1
+                      WHERE BookId = @BookId",
+                    connection);
+
+                updateCommand.Parameters.AddWithValue("@BookId", bookId);
+
+                updateCommand.ExecuteNonQuery();
+            }
+        }
+
+
+        public static List<Loan> GetLoansByMemberName(string name)
+        {
+            var loans = new List<Loan>();
+            using (var connection = new SqliteConnection(_connectionString))
+            {
+                connection.Open();
+
+                var command = new SqliteCommand(
+                    @"SELECT Loan.*, Book.Title, Member.Name, Member.Phone
+                      FROM Loan
+                      JOIN Book ON Loan.BookId = Book.BookId
+                      JOIN Member ON Loan.MemberId = Member.MemberId
+                      WHERE Member.Name LIKE @Name",
+                    connection);
+
+                command.Parameters.AddWithValue("@Name", "%" + name + "%");
+
+                using (var reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        loans.Add(new Loan
+                        {
+                            LoanId = reader.GetInt32(0),
+                            BookId = reader.GetInt32(1),
+                            MemberId = reader.GetInt32(2),
+                            LoanDate = DateTime.Parse(reader.GetString(3)),
+                            DueDate = DateTime.Parse(reader.GetString(4)),
+                            ReturnDate = reader.IsDBNull(5) ? (DateTime?)null : DateTime.Parse(reader.GetString(5)),
+                            BookTitle = reader.GetString(6),
+                            MemberName = reader.GetString(7),
+                            MemberPhone = reader.GetString(8)
+                        });
+                    }
+                }
+            }
+
+            return loans;
+        }
+
+        public static List<Loan> GetLoansByBookTitle(string title)
+        {
+            var loans = new List<Loan>();
+            using (var connection = new SqliteConnection(_connectionString))
+            {
+                connection.Open();
+                var command = new SqliteCommand(
+                    @"SELECT Loan.*, Book.Title, Member.Name, Member.Phone
+                      FROM Loan
+                      JOIN Book ON Loan.BookId = Book.BookId
+                      JOIN Member ON Loan.MemberId = Member.MemberId
+                      WHERE Book.Title LIKE @Title",
+                    connection);
+                command.Parameters.AddWithValue("@Title", "%" + title + "%");
+                using (var reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        loans.Add(new Loan
+                        {
+                            LoanId = reader.GetInt32(0),
+                            BookId = reader.GetInt32(1),
+                            MemberId = reader.GetInt32(2),
+                            LoanDate = DateTime.Parse(reader.GetString(3)),
+                            DueDate = DateTime.Parse(reader.GetString(4)),
+                            ReturnDate = reader.IsDBNull(5) ? (DateTime?)null : DateTime.Parse(reader.GetString(5)),
+                            BookTitle = reader.GetString(6),
+                            MemberName = reader.GetString(7),
+                            MemberPhone = reader.GetString(8)
+                        });
+                    }
+                }
+            }
+
+            return loans;
+        }
+
+        public static List<Loan> GetLoanStateByMemberName(string name)
+        {
+            var loans = new List<Loan>();
+            using (var connection = new SqliteConnection(_connectionString))
+            {
+                connection.Open();
+                var command = new SqliteCommand(
+                    @"SELECT Loan.*, Book.Title, Member.Name, Member.Phone
+                      FROM Loan
+                      JOIN Book ON Loan.BookId = Book.BookId
+                      JOIN Member ON Loan.MemberId = Member.MemberId
+                      WHERE Member.Name LIKE @Name AND Loan.ReturnDate IS NULL",
+                    connection);
+                command.Parameters.AddWithValue("@Name", "%" + name + "%");
+                using (var reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        loans.Add(new Loan
+                        {
+                            LoanId = reader.GetInt32(0),
+                            BookId = reader.GetInt32(1),
+                            MemberId = reader.GetInt32(2),
+                            LoanDate = DateTime.Parse(reader.GetString(3)),
+                            DueDate = DateTime.Parse(reader.GetString(4)),
+                            ReturnDate = reader.IsDBNull(5) ? (DateTime?)null : DateTime.Parse(reader.GetString(5)),
+                            BookTitle = reader.GetString(6),
+                            MemberName = reader.GetString(7),
+                            MemberPhone = reader.GetString(8)
+                        });
+                    }
+                }
+            }
+
+            return loans;
+        }
+        #endregion
+    } 
 }

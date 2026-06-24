@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:Library_Management_System"
         xmlns:views="clr-namespace:Library_Management_System.Views"
         mc:Ignorable="d"
-        Title="도서관리 시스템" Height="450" Width="800">
+        Title="도서관리 시스템" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
     
     <Grid>
         <TabControl>
@@ -14,10 +15,10 @@
                 <views:BooksView/>
             </TabItem>
             <TabItem Header="회원관리">
-                
+                <views:MembersView/>
             </TabItem>
             <TabItem Header="대출/반납">
-                
+                <views:LoansView/>
             </TabItem>
         </TabControl>
     </Grid>

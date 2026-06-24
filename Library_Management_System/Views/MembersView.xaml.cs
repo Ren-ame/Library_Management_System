@@ -38,7 +38,7 @@ namespace Library_Management_System.Views
             TxtPhone.Text = selectedMember.Phone;
             TxtEmail.Text = selectedMember.Email;
         }
-        
+
         public void ClearInputs()
         {
             TxtName.Text = string.Empty;
@@ -104,7 +104,7 @@ namespace Library_Management_System.Views
                     if (string.IsNullOrWhiteSpace(TxtName.Text) || string.IsNullOrWhiteSpace(TxtPhone.Text))
                     {
                         MessageBox.Show("회원명과 전화번호는 필수 입력 항목입니다.");
-                        return; 
+                        return;
                     }
 
                     var UpdatedMember = new Member
@@ -143,5 +143,6 @@ namespace Library_Management_System.Views
             {
                 MessageBox.Show("삭제할 회원을 선택하세요.");
             }
+        }
     }
 }
