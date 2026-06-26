@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>ReturnDialog UI 레퍼런스</title>
+<style>
+  body { font-family: sans-serif; background: #f5f5f5; display: flex; justify-content: center; padding: 40px; }
+  .modal { background: white; border-radius: 10px; border: 1px solid #ddd; padding: 20px; width: 280px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+  .modal-title { font-size: 15px; font-weight: bold; margin-bottom: 12px; padding-bottom: 10px; border-bottom: 1px solid #eee; }
+  .field { margin-bottom: 12px; }
+  .field label { display: block; font-size: 11px; color: #888; margin-bottom: 4px; }
+  .field input, .field select { width: 100%; box-sizing: border-box; border: 1px solid #ddd; border-radius: 6px; padding: 6px 8px; font-size: 13px; }
+  .hint { font-size: 10px; color: #aaa; margin-top: 3px; }
+  .modal-btns { display: flex; gap: 8px; margin-top: 16px; }
+  .btn { flex: 1; padding: 7px; border-radius: 6px; font-size: 13px; border: 1px solid #ddd; background: #f5f5f5; cursor: pointer; text-align: center; }
+  .btn.primary { background: #222; color: white; border-color: #222; }
+</style>
+</head>
+<body>
+  <div>
+    <h3 style="margin-bottom:16px;color:#333">ReturnDialog UI 레퍼런스</h3>
+    <div class="modal">
+      <div class="modal-title">반납 처리</div>
+      <div class="field">
+        <label>회원명</label>
+        <input type="text" placeholder="회원명 입력 후 조회"/>
+        <div class="hint">입력 후 조회 버튼 클릭</div>
+      </div>
+      <div class="field">
+        <label>대출중인 도서</label>
+        <select>
+          <option>조회 후 선택...</option>
+          <option>C# 완전정복</option>
+          <option>WPF 입문</option>
+        </select>
+        <div class="hint">회원명 조회 시 대출중인 도서만 표시</div>
+      </div>
+      <div class="field">
+        <label>반납일</label>
+        <input type="date"/>
+      </div>
+      <div class="modal-btns">
+        <button class="btn">취소</button>
+        <button class="btn primary">반납 완료</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
