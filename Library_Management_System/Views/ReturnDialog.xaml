@@ -5,9 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Library_Management_System.Views"
         mc:Ignorable="d"
-        Title="ReturnDialog" Height="280" Width="250">
+        Title="ReturnDialog" Height="380" Width="250"
+        WindowStartupLocation="CenterOwner">
     
     <Grid>
-        
+        <StackPanel Margin="10">
+            <Label Content="반납 처리" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+            <Separator Margin="0 4 0 4"/>
+            <Label Content="회원명" FontSize="10"/>
+            <ComboBox x:Name="CmbMemberName" IsEditable="True"
+                      HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="25"
+                      IsTextSearchEnabled="True" SelectionChanged="CmbMemberName_SelectionChanged"/>
+            <Label Content="대출중인 도서명" FontSize="10" Margin="0 10 0 0"/>
+            <DataGrid x:Name="DgLoans" Height="100">
+                <DataGrid.Columns>
+                    <DataGridCheckBoxColumn Header="선택" Binding="{Binding IsSelected}"/>
+                    <DataGridTextColumn Header="도서명" Binding="{Binding BookTitle}" Width="*"/>
+                    <DataGridTextColumn Header="대출일" Binding="{Binding LoanDate}" Width="80"/>
+                </DataGrid.Columns>
+            </DataGrid>
+            <Label Content="반납일" FontSize="10" Margin="0 10 0 0"/>
+            <DatePicker x:Name="DpReturnDate" Height="25"/>
+            
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Width="230" Margin="0 20 0 0">
+                <Button x:Name="BtnConfirm" Content="등록" Height="30" Width="80" Margin="25 0 20 0" Click="BtnConfirm_Click"/>
+                <Button x:Name="BtnCancel" Content="취소" Height="30" Width="80" Click="BtnCancel_Click"/>
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Window>

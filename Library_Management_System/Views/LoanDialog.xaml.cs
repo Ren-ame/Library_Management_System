@@ -89,11 +89,13 @@ namespace Library_Management_System.Views
             };
 
             DbHelper.AddLoan(loan);
+            this.DialogResult = true;
             this.Close();
         }
 
         private void BtnCancel_Click(object sender, RoutedEventArgs e)
         {
+            this.DialogResult = false;
             this.Close();
         }
     }

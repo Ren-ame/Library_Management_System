@@ -29,5 +29,6 @@ namespace Library_Management_System.Models
         }
 
         public string MemberDisplayName => $"{MemberName}({MemberPhone.Substring(MemberPhone.Length - 4)})";
+        public bool IsSelected { get; set; }
     }
 }

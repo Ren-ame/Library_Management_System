@@ -28,9 +28,9 @@ Library_Management_System/
 ├── Views/
 │   ├── BooksView.xaml + .cs    ✅ 완료
 │   ├── MembersView.xaml + .cs  ✅ 완료
-│   ├── LoansView.xaml + .cs    🔄 진행중 (XAML 완료, BtnReturn_Click 미완)
-│   ├── LoanDialog.xaml + .cs   🔄 진행중 (XAML 완료, 코드비하인드 완료)
-│   └── ReturnDialog.xaml + .cs ❌ 미작성
+│   ├── LoansView.xaml + .cs    🔄 진행중 (BtnReturn_Click 미완)
+│   ├── LoanDialog.xaml + .cs   ✅ 완료
+│   └── ReturnDialog.xaml + .cs ✅ 완료
 ├── App.xaml.cs         ✅ SQLitePCL.Batteries_V2.Init() + InitializeDatabase() 호출
 └── MainWindow.xaml     ✅ TabControl 3탭 모두 연결 완료
 ```
@@ -47,9 +47,8 @@ Library_Management_System/
 - 날짜 표시: yy-MM-dd 포맷
 
 ## 다음 할 일
-1. ReturnDialog.xaml + .cs 작성
-2. LoansView.xaml.cs BtnReturn_Click 연결
-3. 빌드 및 전체 테스트
+1. LoansView.xaml.cs BtnReturn_Click 연결 (ReturnDialog 열고 닫힌 후 LoadLoans())
+2. 빌드 및 전체 테스트
 
 ## 코딩 스타일
 - 코드를 대신 작성하지 말고 설명 후 본인이 직접 작성하도록 유도

@@ -48,3 +48,28 @@
 - ReturnDialog.xaml + .cs 작성
 - LoansView.xaml.cs BtnReturn_Click 연결
 - 빌드 및 전체 테스트
+
+---
+
+## 2026-06-26
+
+### 작업 내용
+- ReturnDialog.xaml: ComboBox(IsEditable+IsTextSearchEnabled), DataGrid(CheckBox+도서명+대출일), DatePicker, 버튼 2개 구성 완료
+- ReturnDialog.xaml.cs 작성:
+  - LoadMembers(): GetAllMembers().Select(m => m.MemberDisplayName) → CmbMemberName.ItemsSource
+  - 생성자: LoadMembers() + DpReturnDate.SelectedDate = DateTime.Today
+  - CmbMemberName_SelectionChanged: Text.Split('(')[0]으로 이름 추출 → GetLoanStateByMemberName() → DgLoans.ItemsSource
+  - BtnConfirm_Click: DgLoans.ItemsSource as List<Loan> → IsSelected 필터 → ReturnLoan(loanId, bookId, returnDate)
+  - BtnCancel_Click: this.Close()
+- Member.cs: MemberDisplayName 프로퍼티 추가 (Name + Phone 뒷 4자리)
+- Loan.cs: IsSelected 프로퍼티 추가 (체크박스 바인딩용)
+
+### 이슈 및 해결
+- using System.Windows.Forms 충돌 → 삭제
+- DataGrid x:Name이 Dg가 아닌 DgLoans → 코드 수정
+- GetLoansByMemberName 대신 GetLoanStateByMemberName 사용 (대출중인 것만 조회)
+- ReturnLoan 시그니처: (loanId, bookId, returnDate) — bookId 필수
+
+### 다음 작업
+- LoansView.xaml.cs BtnReturn_Click 연결 (ReturnDialog 열고 닫힌 후 LoadLoans())
+- 빌드 및 전체 테스트

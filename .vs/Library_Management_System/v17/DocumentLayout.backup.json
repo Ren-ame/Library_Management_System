@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\C#_Final_Test\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|D:\\C#_Final_Test\\library_management_system\\views\\loansview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|solutionrelative:library_management_system\\views\\loansview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|D:\\C#_Final_Test\\Library_Management_System\\Models\\Loan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|solutionrelative:Library_Management_System\\Models\\Loan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|D:\\C#_Final_Test\\library_management_system\\views\\membersview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|solutionrelative:library_management_system\\views\\membersview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -31,10 +39,6 @@
       "RelativeMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|solutionrelative:Library_Management_System\\Database\\DbHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|D:\\C#_Final_Test\\library_management_system\\views\\loansview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|solutionrelative:library_management_system\\views\\loansview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|D:\\C#_Final_Test\\library_management_system\\views\\returndialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|solutionrelative:library_management_system\\views\\returndialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -45,10 +49,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|D:\\C#_Final_Test\\library_management_system\\views\\membersview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|solutionrelative:library_management_system\\views\\membersview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|D:\\C#_Final_Test\\Library_Management_System\\Models\\Loan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|solutionrelative:Library_Management_System\\Models\\Loan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|D:\\C#_Final_Test\\Library_Management_System\\Models\\Member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -78,11 +78,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\C#_Final_Test\\Library_Management_System\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Library_Management_System\\MainWindow.xaml",
@@ -95,7 +95,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "BooksView.xaml",
               "DocumentMoniker": "D:\\C#_Final_Test\\Library_Management_System\\Views\\BooksView.xaml",
               "RelativeDocumentMoniker": "Library_Management_System\\Views\\BooksView.xaml",
@@ -108,7 +108,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "MembersView.xaml",
               "DocumentMoniker": "D:\\C#_Final_Test\\Library_Management_System\\Views\\MembersView.xaml",
               "RelativeDocumentMoniker": "Library_Management_System\\Views\\MembersView.xaml",
@@ -121,7 +121,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "LoansView.xaml",
               "DocumentMoniker": "D:\\C#_Final_Test\\Library_Management_System\\Views\\LoansView.xaml",
               "RelativeDocumentMoniker": "Library_Management_System\\Views\\LoansView.xaml",
@@ -129,11 +129,12 @@
               "RelativeToolTip": "Library_Management_System\\Views\\LoansView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-06-24T13:50:19.997Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "DbHelper.cs",
               "DocumentMoniker": "D:\\C#_Final_Test\\Library_Management_System\\Database\\DbHelper.cs",
               "RelativeDocumentMoniker": "Library_Management_System\\Database\\DbHelper.cs",
@@ -146,18 +147,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LoanDialog.xaml",
-              "DocumentMoniker": "D:\\C#_Final_Test\\Library_Management_System\\Views\\LoanDialog.xaml",
-              "RelativeDocumentMoniker": "Library_Management_System\\Views\\LoanDialog.xaml",
-              "ToolTip": "D:\\C#_Final_Test\\Library_Management_System\\Views\\LoanDialog.xaml",
-              "RelativeToolTip": "Library_Management_System\\Views\\LoanDialog.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-06-24T15:16:05.602Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "LoanDialog.xaml.cs",
               "DocumentMoniker": "D:\\C#_Final_Test\\Library_Management_System\\Views\\LoanDialog.xaml.cs",
               "RelativeDocumentMoniker": "Library_Management_System\\Views\\LoanDialog.xaml.cs",
@@ -169,7 +159,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Views\\LoansView.xaml.cs",
               "DocumentMoniker": "D:\\C#_Final_Test\\Library_Management_System\\Views\\LoansView.xaml.cs",
               "RelativeDocumentMoniker": "Library_Management_System\\Views\\LoansView.xaml.cs",
@@ -181,7 +171,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
+              "Title": "Loan.cs",
+              "DocumentMoniker": "D:\\C#_Final_Test\\Library_Management_System\\Models\\Loan.cs",
+              "RelativeDocumentMoniker": "Library_Management_System\\Models\\Loan.cs",
+              "ToolTip": "D:\\C#_Final_Test\\Library_Management_System\\Models\\Loan.cs",
+              "RelativeToolTip": "Library_Management_System\\Models\\Loan.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB4AAABsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-23T02:12:54.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoanDialog.xaml",
+              "DocumentMoniker": "D:\\C#_Final_Test\\Library_Management_System\\Views\\LoanDialog.xaml",
+              "RelativeDocumentMoniker": "Library_Management_System\\Views\\LoanDialog.xaml",
+              "ToolTip": "D:\\C#_Final_Test\\Library_Management_System\\Views\\LoanDialog.xaml",
+              "RelativeToolTip": "Library_Management_System\\Views\\LoanDialog.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-24T15:16:05.602Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "ReturnDialog.xaml",
               "DocumentMoniker": "D:\\C#_Final_Test\\Library_Management_System\\Views\\ReturnDialog.xaml",
               "RelativeDocumentMoniker": "Library_Management_System\\Views\\ReturnDialog.xaml",
@@ -192,7 +206,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "BooksView.xaml.cs",
               "DocumentMoniker": "D:\\C#_Final_Test\\Library_Management_System\\Views\\BooksView.xaml.cs",
               "RelativeDocumentMoniker": "Library_Management_System\\Views\\BooksView.xaml.cs",
@@ -204,7 +218,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "MembersView.xaml.cs",
               "DocumentMoniker": "D:\\C#_Final_Test\\Library_Management_System\\Views\\MembersView.xaml.cs",
               "RelativeDocumentMoniker": "Library_Management_System\\Views\\MembersView.xaml.cs",
@@ -213,18 +227,6 @@
               "ViewState": "AgIAACEAAAAAAAAAAAAAAIsAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-24T10:43:14.61Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Loan.cs",
-              "DocumentMoniker": "D:\\C#_Final_Test\\Library_Management_System\\Models\\Loan.cs",
-              "RelativeDocumentMoniker": "Library_Management_System\\Models\\Loan.cs",
-              "ToolTip": "D:\\C#_Final_Test\\Library_Management_System\\Models\\Loan.cs",
-              "RelativeToolTip": "Library_Management_System\\Models\\Loan.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-23T02:12:54.044Z"
             },
             {
               "$type": "Document",
