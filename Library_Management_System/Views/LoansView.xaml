@@ -34,7 +34,7 @@
                       SelectionChanged="LoansGrid_SelectionChanged">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="ID" Binding="{Binding LoanId}" Width="40"/>
-                    <DataGridTextColumn Header="회원명" Binding="{Binding MemberName}" Width="100"/>
+                    <DataGridTextColumn Header="회원명" Binding="{Binding MemberDisplayName}" Width="100"/>
                     <DataGridTextColumn Header="도서명" Binding="{Binding BookTitle}" Width="*"/>
                     <DataGridTextColumn Header="대출일" Binding="{Binding LoanDate, StringFormat=yy-MM-dd}" Width="80"/>
                     <DataGridTextColumn Header="반납예정일" Binding="{Binding DueDate, StringFormat=yy-MM-dd}" Width="80"/>

@@ -27,5 +27,7 @@ namespace Library_Management_System.Models
                 return "대출중";
             }
         }
+
+        public string MemberDisplayName => $"{MemberName}({MemberPhone.Substring(MemberPhone.Length - 4)})";
     }
 }
