@@ -7,7 +7,6 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
-using System.Windows.Forms;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
@@ -19,6 +18,8 @@ namespace Library_Management_System.Views
 {
     public partial class ReturnDialog : Window
     {
+        private List<string> _allMemberNames;
+
         public ReturnDialog()
         {
             InitializeComponent();
@@ -28,13 +29,23 @@ namespace Library_Management_System.Views
 
         private void MemberDisplayName()
         {
-            CmbMemberName.ItemsSource = DbHelper.GetAllMembers().Select(m => m.MemberDisplayName).ToList();
+            _allMemberNames = DbHelper.GetAllMembers().Select(m => m.MemberDisplayName).ToList();
+            CmbMemberName.ItemsSource = _allMemberNames;
+            CmbMemberName.AddHandler(TextBox.TextChangedEvent, new TextChangedEventHandler(OnMemberTextChanged));
+        }
+
+        private void OnMemberTextChanged(object sender, TextChangedEventArgs e)
+        {
+            string input = CmbMemberName.Text;
+            var filtered = _allMemberNames.Where(n => n.Contains(input)).ToList();
+            CmbMemberName.ItemsSource = filtered;
+            CmbMemberName.IsDropDownOpen = filtered.Count > 0;
         }
 
         private void CmbMemberName_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             string memberName = CmbMemberName.Text.Split('(')[0];
-            var loans = DbHelper.GetLoansByMemberName(memberName);
+            var loans = DbHelper.GetLoanStateByMemberName(memberName);
             DgLoans.ItemsSource = loans;
         }
 

@@ -48,6 +48,8 @@ namespace Library_Management_System.Views
             TxtQuantity.Text = string.Empty;
         }
 
+        public void Reload() => LoadBooks();
+
         private void BooksGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var selectedBook = (Book)BooksGrid.SelectedItem;

@@ -61,7 +61,10 @@ namespace Library_Management_System.Views
 
         private void BtnReturn_Click(object sender, RoutedEventArgs e)
         {
-           
+            var dialog = new ReturnDialog();
+            dialog.Owner = Window.GetWindow(this);
+            dialog.ShowDialog();
+            LoadLoans();
         }
 
         private void LoansGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)

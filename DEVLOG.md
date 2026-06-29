@@ -73,3 +73,28 @@
 ### 다음 작업
 - LoansView.xaml.cs BtnReturn_Click 연결 (ReturnDialog 열고 닫힌 후 LoadLoans())
 - 빌드 및 전체 테스트
+
+---
+
+## 2026-06-29
+
+### 작업 내용
+- ReturnDialog.xaml.cs 완성:
+  - using System.Windows.Forms 제거 (WPF 충돌)
+  - _allMemberNames 필드 추가, TextChanged 자동완성 검색 구현 (AddHandler + IsDropDownOpen)
+  - GetLoansByMemberName → GetLoanStateByMemberName 수정 (대출중인 것만 표시)
+  - DataGridCheckBoxColumn Mode=TwoWay, UpdateSourceTrigger=PropertyChanged 추가 (다중 반납 수정)
+  - AutoGenerateColumns="False" 추가 (불필요한 컬럼 제거)
+- LoansView.xaml.cs BtnReturn_Click 완성 (ReturnDialog 열고 LoadLoans())
+- MainWindow.xaml TabControl_SelectionChanged 추가 (탭 전환 시 BooksView 갱신)
+- BooksView.xaml.cs Reload() 추가
+
+### 이슈 및 해결
+- 다중 반납 안 되는 문제 → DataGridCheckBoxColumn 바인딩에 TwoWay + UpdateSourceTrigger 추가
+- 반납완료 도서가 반납 팝업에 뜨는 문제 → GetLoanStateByMemberName으로 교체
+- AutoGenerateColumns 기본값 True → False로 수정
+- TextBox 모호한 참조 오류 → using System.Windows.Forms 제거
+
+### 다음 작업
+- BooksView CSV 불러오기 기능 (불러오기 버튼 + OpenFileDialog + CSV 파싱)
+- exe 변환 (Release 빌드 또는 Publish)

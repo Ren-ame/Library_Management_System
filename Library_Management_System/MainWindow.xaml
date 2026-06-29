@@ -10,9 +10,9 @@
         WindowStartupLocation="CenterScreen">
     
     <Grid>
-        <TabControl>
-            <TabItem Header="도서관리">
-                <views:BooksView/>
+        <TabControl SelectionChanged="TabControl_SelectionChanged">
+            <TabItem x:Name="BooksTabItem" Header="도서관리">
+                <views:BooksView x:Name="BooksViewControl"/>
             </TabItem>
             <TabItem Header="회원관리">
                 <views:MembersView/>
