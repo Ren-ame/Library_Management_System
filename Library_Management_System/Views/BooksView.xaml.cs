@@ -14,6 +14,8 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Library_Management_System.Database;
 using Library_Management_System.Models;
+using Microsoft.Win32;
+using System.IO;
 
 namespace Library_Management_System.Views
 {
@@ -164,5 +166,14 @@ namespace Library_Management_System.Views
             }
         }
 
+        private void BtnImport_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog
+            {
+                Filter = "CSV files (*.csv)|*.csv|All files (*.*)|*.*"
+            };
+
+            
+        }
     }
 }

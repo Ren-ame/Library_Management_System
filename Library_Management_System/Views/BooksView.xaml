@@ -25,6 +25,7 @@
             <Button x:Name="BtnAdd" Content="추가" Margin="8 0 0 0" Click="BtnAdd_Click"/>
             <Button x:Name="BtnEdit" Content="수정" Click="BtnEdit_Click"/>
             <Button x:Name="BtnDelete" Content="삭제" Click="BtnDelete_Click"/>
+            <Button x:Name="BtnImport" Content="불러오기" Margin="20 0 0 0" Click="BtnImport_Click"
         </StackPanel>
         <DataGrid x:Name="BooksGrid" Grid.Row="1" Margin="8"
                   AutoGenerateColumns="False"
