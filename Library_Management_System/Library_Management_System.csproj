@@ -111,6 +111,7 @@
     <Compile Include="Views\BooksView.xaml.cs">
       <DependentUpon>BooksView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Database\CsvHelper.cs" />
     <Compile Include="Views\LoanDialog.xaml.cs">
       <DependentUpon>LoanDialog.xaml</DependentUpon>
     </Compile>

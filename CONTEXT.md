@@ -47,11 +47,8 @@ Library_Management_System/
 - 날짜 표시: yy-MM-dd 포맷
 
 ## 다음 할 일
-1. BooksView.xaml — 삭제 버튼 오른쪽에 불러오기 버튼 추가 (Margin으로 간격)
-2. BooksView.xaml.cs — BtnImport_Click 구현 (OpenFileDialog → CSV 파싱 → AddBook → LoadBooks)
-   - CSV 형식: 제목,저자,ISBN,수량 (첫 줄 헤더 스킵)
-   - using Microsoft.Win32 추가 필요
-3. exe 변환: 빌드 → Release 모드 → bin\Release 폴더에 exe 생성 (또는 Publish로 단일 파일)
+1. exe 변환: Release 모드 빌드 → bin\Release 폴더에 exe 생성 (또는 Publish로 단일 파일)
+2. 전체 테스트
 
 ## 코딩 스타일
 - 코드를 대신 작성하지 말고 설명 후 본인이 직접 작성하도록 유도

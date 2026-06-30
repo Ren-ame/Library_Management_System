@@ -98,3 +98,23 @@
 ### 다음 작업
 - BooksView CSV 불러오기 기능 (불러오기 버튼 + OpenFileDialog + CSV 파싱)
 - exe 변환 (Release 빌드 또는 Publish)
+
+---
+
+## 2026-06-30
+
+### 작업 내용
+- BooksView.xaml: 불러오기 버튼 추가 (삭제 버튼 오른쪽, Margin으로 간격)
+- BooksView.xaml.cs: BtnImport_Click 구현 (OpenFileDialog → CsvHelper → AddBook → LoadBooks)
+- Database/CsvHelper.cs 신규 작성:
+  - ImportBooksFromCsv(string filePath): CSV 파싱 → List<Book> 반환
+  - ISBN 중복 체크: DbHelper.GetBookByISBN() == null 인 것만 추가
+- DbHelper.cs: GetBookByISBN(string isbn) 추가
+- books.csv 샘플 파일 생성 (도서 10권, 제목/저자/ISBN/수량)
+
+### 이슈 및 해결
+- CSV 중복 추가 문제 → ISBN 기준 중복 체크로 해결
+
+### 다음 작업
+- exe 변환 (Release 빌드 또는 Publish)
+- 전체 테스트

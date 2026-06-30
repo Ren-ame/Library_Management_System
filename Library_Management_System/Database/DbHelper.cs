@@ -171,6 +171,35 @@ namespace Library_Management_System.Database
             }
             return book;
         }
+
+        public static Book GetBookByISBN(string isbn)
+        {
+            Book book = null;
+            using (var connection = new SqliteConnection(_connectionString))
+            {
+                connection.Open();
+                var command = new SqliteCommand(
+                    @"SELECT * FROM Book WHERE ISBN = @ISBN",
+                    connection);
+                command.Parameters.AddWithValue("@ISBN", isbn);
+                using (var reader = command.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        book = new Book
+                        {
+                            BookId = reader.GetInt32(0),
+                            Title = reader.GetString(1),
+                            Author = reader.GetString(2),
+                            ISBN = reader.IsDBNull(3) ? string.Empty : reader.GetString(3),
+                            TotalQuantity = reader.GetInt32(4),
+                            AvailableQuantity = reader.GetInt32(5)
+                        };
+                    }
+                }
+            }
+            return book;
+        }
         #endregion
 
         #region Member

@@ -173,7 +173,23 @@ namespace Library_Management_System.Views
                 Filter = "CSV files (*.csv)|*.csv|All files (*.*)|*.*"
             };
 
-            
+            if (openFileDialog.ShowDialog() == true)
+            {
+                try
+                {
+                    var books = CsvHelper.ImportBooksFromCsv(openFileDialog.FileName);
+                    foreach (var book in books)
+                    {
+                        DbHelper.AddBook(book);
+                    }
+                    LoadBooks();
+                    MessageBox.Show("CSV 파일이 성공적으로 가져와졌습니다.");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"CSV 파일 가져오기 중 오류가 발생했습니다: {ex.Message}");
+                }
+            }
         }
     }
 }
