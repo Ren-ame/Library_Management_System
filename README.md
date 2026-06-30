@@ -1,63 +1,85 @@
-# Library Management System
+# 도서관리 시스템
 
-WPF(.NET Framework 4.7.2) + SQLite 기반 도서관리 시스템입니다.
+> C# WPF 기반 도서관리 데스크탑 앱 — 도서/회원/대출반납 관리 (SQLite)
 
-## 현재 구현 상태 요약
+> 작성일: 2026/06/30
 
-- **도서 관리(BooksView)**: 도서 추가/수정/삭제, 목록 조회
-- **회원 관리(MembersView)**: 회원 추가/수정/삭제, 목록 조회
-- **대출 관리(LoansView)**:
-  - 대출 목록 조회
-  - 회원명/도서명 검색
-  - `LoanDialog`를 통한 대출 등록
-  - 반납 처리 버튼/다이얼로그는 아직 미완성 (`BtnReturn_Click`, `ReturnDialog` 비어 있음)
+## 📌 개요
 
-## 프로젝트 구조
+C# WPF(.NET Framework 4.7.2)로 제작한 도서관 관리 시스템입니다. 도서 등록, 회원 관리, 대출/반납 처리를 하나의 데스크탑 앱에서 관리할 수 있습니다.
 
-```text
+## ✨ 주요 기능
+
+- **도서 관리**: 도서 추가/수정/삭제, CSV 파일 일괄 불러오기 (ISBN 중복 체크)
+- **회원 관리**: 회원 추가/수정/삭제, 동명이인 구분 (전화번호 뒷 4자리 표시)
+- **대출 관리**: 대출 등록, 회원명/도서명 검색, 대출 상태 실시간 표시 (대출중/연체/반납완료)
+- **반납 처리**: 회원 자동완성 검색, 다중 도서 동시 반납 (체크박스 선택)
+
+## 🛠 기술 스택
+
+| 분류 | 기술 |
+|------|------|
+| 언어 | C# |
+| UI 프레임워크 | WPF (.NET Framework 4.7.2) |
+| 데이터베이스 | SQLite (Microsoft.Data.Sqlite v10.0.9) |
+| 패키지 | SQLitePCLRaw.bundle_e_sqlite3 |
+
+## 📁 프로젝트 구조
+
+```
 Library_Management_System/
-├─ Library_Management_System/
-│  ├─ Database/
-│  │  └─ DbHelper.cs           # SQLite 초기화, Book/Member/Loan CRUD
-│  ├─ Models/
-│  │  ├─ Book.cs
-│  │  ├─ Member.cs
-│  │  └─ Loan.cs               # Status(대출중/연체/반납완료) 계산 프로퍼티
-│  ├─ Views/
-│  │  ├─ BooksView.xaml(.cs)
-│  │  ├─ MembersView.xaml(.cs)
-│  │  ├─ LoansView.xaml(.cs)
-│  │  ├─ LoanDialog.xaml(.cs)
-│  │  └─ ReturnDialog.xaml(.cs)
-│  ├─ App.xaml.cs              # 앱 시작 시 SQLite 초기화 + DB 생성
-│  └─ MainWindow.xaml          # 탭(도서/회원/대출반납) 구성
-└─ Library_Management_System.sln
+├── Models/
+│   ├── Book.cs
+│   ├── Member.cs
+│   └── Loan.cs              (Status 프로퍼티 실시간 계산)
+├── Database/
+│   ├── DbHelper.cs          (Book/Member/Loan CRUD)
+│   └── CsvHelper.cs         (CSV 파싱 및 ISBN 중복 체크)
+├── Views/
+│   ├── BooksView.xaml + .cs
+│   ├── MembersView.xaml + .cs
+│   ├── LoansView.xaml + .cs
+│   ├── LoanDialog.xaml + .cs
+│   └── ReturnDialog.xaml + .cs
+├── App.xaml.cs              (DB 초기화)
+└── MainWindow.xaml          (TabControl 3탭)
 ```
 
-## 데이터베이스
+## ⚙️ 설치 및 실행
 
-- DB 파일: `library.db` (실행 경로 기준 생성)
-- 테이블
-  - `Book(BookId, Title, Author, ISBN, TotalQuantity, AvailableQuantity)`
-  - `Member(MemberId, Name, Phone, Email)`
-  - `Loan(LoanId, BookId, MemberId, LoanDate, DueDate, ReturnDate)`
+```
+1. Visual Studio에서 솔루션 열기
+2. NuGet 패키지 복원
+3. 프로젝트 속성 → 빌드 → 플랫폼 대상: x64 설정
+4. 빌드 및 실행
+```
 
-## 핵심 동작
+## 📊 데이터베이스
 
-- 앱 시작 시 `DbHelper.InitializeDatabase()`로 테이블 자동 생성
-- 대출 등록 시 `Loan` 추가 + `Book.AvailableQuantity` 1 감소
-- 반납 처리 시 `Loan.ReturnDate` 업데이트 + `Book.AvailableQuantity` 1 증가
-- `Loan.Status`는 DB 저장값이 아닌 날짜 기반 실시간 계산
+- DB 파일: `library.db` (실행 경로 기준 자동 생성)
 
-## CONTEXT.md/DEVLOG.md 대비 코드 확인 결과
+| 테이블 | 주요 컬럼 |
+|--------|----------|
+| Book | BookId, Title, Author, ISBN, TotalQuantity, AvailableQuantity |
+| Member | MemberId, Name, Phone, Email |
+| Loan | LoanId, BookId(FK), MemberId(FK), LoanDate, DueDate, ReturnDate |
 
-- 문서와 동일하게 대출 목록/검색/대출 등록까지 구현되어 있음
-- 문서에서 진행중으로 표시된 반납 기능은 현재 코드에서도 미완성 상태임
-- 현재 브랜치는 `origin/copilot/update-readme-with-code-explanations`와 동기화된 상태(로컬 변경 전 기준)
+## 📄 CSV 불러오기 형식
 
-## 빌드 관련 메모 (현재 실행 환경 기준)
+도서관리 탭의 **불러오기** 버튼으로 CSV 파일을 일괄 등록할 수 있습니다. ISBN이 이미 존재하는 도서는 자동으로 스킵됩니다.
 
-- `msbuild` 명령 미설치
-- `dotnet msbuild` 사용 시:
-  - `Any CPU`: sqlite 패키지 제약으로 실패
-  - `x64`: .NET Framework 4.7.2 targeting pack 부재로 실패
+```
+제목,저자,ISBN,수량
+채식주의자,한강,9788936434120,3
+어린 왕자,생텍쥐페리,9788932917245,4
+```
+
+## 📝 개발 기간
+
+| 날짜 | 내용 |
+|------|------|
+| 2026-06-24 | 프로젝트 생성, Models, DbHelper, BooksView, MembersView |
+| 2026-06-25 | LoansView, LoanDialog, Loan DB 연동 |
+| 2026-06-26 | ReturnDialog 구현 |
+| 2026-06-29 | 반납 버그 수정, 자동완성 검색, 탭 갱신 |
+| 2026-06-30 | CSV 불러오기 기능 추가 |
