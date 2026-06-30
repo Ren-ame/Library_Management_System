@@ -519,6 +519,43 @@ namespace Library_Management_System.Database
 
             return loans;
         }
+
+        public static List<Loan> GetLoanStateByMemberId(int memberId)
+        {
+            var loans = new List<Loan>();
+            using (var connection = new SqliteConnection(_connectionString))
+            {
+                connection.Open();
+                var command = new SqliteCommand(
+                    @"SELECT Loan.*, Book.Title, Member.Name, Member.Phone
+                      FROM Loan
+                      JOIN Book ON Loan.BookId = Book.BookId
+                      JOIN Member ON Loan.MemberId = Member.MemberId
+                      WHERE Loan.MemberId = @MemberId AND Loan.ReturnDate IS NULL",
+                    connection);
+                command.Parameters.AddWithValue("@MemberId", memberId);
+                using (var reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        loans.Add(new Loan
+                        {
+                            LoanId = reader.GetInt32(0),
+                            BookId = reader.GetInt32(1),
+                            MemberId = reader.GetInt32(2),
+                            LoanDate = DateTime.Parse(reader.GetString(3)),
+                            DueDate = DateTime.Parse(reader.GetString(4)),
+                            ReturnDate = reader.IsDBNull(5) ? (DateTime?)null : DateTime.Parse(reader.GetString(5)),
+                            BookTitle = reader.GetString(6),
+                            MemberName = reader.GetString(7),
+                            MemberPhone = reader.GetString(8)
+                        });
+                    }
+                }
+            }
+
+            return loans;
+        }
         #endregion
     } 
 }

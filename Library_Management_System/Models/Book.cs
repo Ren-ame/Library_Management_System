@@ -14,5 +14,6 @@ namespace Library_Management_System.Models
         public string ISBN { get; set; } = string.Empty;
         public int TotalQuantity { get; set; }
         public int AvailableQuantity { get; set; }
+        public bool IsSelected { get; set; }
     }
 }

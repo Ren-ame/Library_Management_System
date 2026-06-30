@@ -1,33 +1,42 @@
-﻿<Window x:Class="Library_Management_System.Views.LoanDialog"
+<Window x:Class="Library_Management_System.Views.LoanDialog"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Library_Management_System.Views"
         mc:Ignorable="d"
-        Title="LoanDialog" Height="380" Width="250"
+        Title="LoanDialog" Height="500" Width="300"
         WindowStartupLocation="CenterOwner">
-    
+
     <Grid>
         <StackPanel Margin="10">
-            <Label Content="대출 등록" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" FontSize="14" FontWeight="Bold"/>
+            <Label Content="대출 등록" HorizontalContentAlignment="Left" FontSize="14" FontWeight="Bold"/>
             <Separator Margin="0 4 0 4"/>
+
             <Label Content="회원명" FontSize="10"/>
-            <TextBox x:Name="TxtMemberName" 
-                     HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Height="25"
-                     Text="회원명을 입력해주세요"  Foreground="Gray"
-                     GotFocus="TxtMemberName_GotFocus"/>
-            <Label Content="도서명" FontSize="10" Margin="0 10 0 0"/>
-            <TextBox x:Name="TxtBookTitle" 
-                     HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Height="25"
-                     Text="도서명을 입력해주세요" Foreground="Gray"
-                     GotFocus="TxtBookName_GotFocus"/>
+            <ComboBox x:Name="CmbMemberName" IsEditable="True" IsTextSearchEnabled="True"
+                      VerticalContentAlignment="Center" Height="25"/>
+
+            <Label Content="도서명 검색" FontSize="10" Margin="0 10 0 0"/>
+            <TextBox x:Name="TxtSearchBook" Height="25" VerticalContentAlignment="Center"
+                     TextChanged="TxtSearchBook_TextChanged"/>
+
+            <DataGrid x:Name="DgBooks" Height="130" Margin="0 4 0 0"
+                      AutoGenerateColumns="False" IsReadOnly="False"
+                      CanUserAddRows="False" CanUserDeleteRows="False">
+                <DataGrid.Columns>
+                    <DataGridCheckBoxColumn Header="선택" Binding="{Binding IsSelected, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="40"/>
+                    <DataGridTextColumn Header="도서명" Binding="{Binding Title}" Width="*" IsReadOnly="True"/>
+                    <DataGridTextColumn Header="대출가능" Binding="{Binding AvailableQuantity}" Width="55" IsReadOnly="True"/>
+                </DataGrid.Columns>
+            </DataGrid>
+
             <Label Content="대출일" FontSize="10" Margin="0 10 0 0"/>
-            <DatePicker x:Name="DpLoanDate" Height="25"/>
+            <DatePicker x:Name="DpLoanDate" Height="25" SelectedDateChanged="DpLoanDate_SelectedDateChanged"/>
             <Label Content="반납예정일" FontSize="10" Margin="0 10 0 0"/>
             <DatePicker x:Name="DpDueDate" Height="25"/>
 
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Width="230" Margin="0 20 0 0">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Width="230" Margin="0 16 0 0">
                 <Button x:Name="BtnConfirm" Content="등록" Height="30" Width="80" Margin="25 0 20 0" Click="BtnConfirm_Click"/>
                 <Button x:Name="BtnCancel" Content="취소" Height="30" Width="80" Click="BtnCancel_Click"/>
             </StackPanel>

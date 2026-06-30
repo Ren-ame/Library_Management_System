@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\C#_Final_Test\Library_Management_System\App.xaml
-3-2058632954
+6-1040984885
 
-12-93577115
+16886117119
 261817773243
-MainWindow.xaml;Views\BooksView.xaml;Views\MembersView.xaml;
+MainWindow.xaml;Views\BooksView.xaml;Views\LoanDialog.xaml;Views\LoansView.xaml;Views\MembersView.xaml;Views\ReturnDialog.xaml;
 
 True
 
