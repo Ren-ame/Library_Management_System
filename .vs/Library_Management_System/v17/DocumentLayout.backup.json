@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "D:\\C#_Final_Test\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|D:\\C#_Final_Test\\library_management_system\\views\\returndialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|d:\\c#_final_test\\library_management_system\\views\\returndialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|solutionrelative:library_management_system\\views\\returndialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
@@ -15,7 +15,7 @@
       "RelativeMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|solutionrelative:library_management_system\\views\\loandialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|d:\\c#_final_test\\library_management_system\\views\\booksview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|D:\\C#_Final_Test\\library_management_system\\views\\booksview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F321EAA-DDCD-4DBE-AD96-A63799CFC9BD}|Library_Management_System\\Library_Management_System.csproj|solutionrelative:library_management_system\\views\\booksview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -122,8 +122,7 @@
               "RelativeToolTip": "Library_Management_System\\Views\\LoansView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-06-24T13:50:19.997Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -159,8 +158,7 @@
               "ToolTip": "D:\\C#_Final_Test\\Library_Management_System\\Views\\LoanDialog.xaml",
               "RelativeToolTip": "Library_Management_System\\Views\\LoanDialog.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-06-24T15:16:05.602Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-24T15:16:05.602Z"
             },
             {
               "$type": "Document",
@@ -184,8 +182,7 @@
               "RelativeToolTip": "Library_Management_System\\Views\\BooksView.xaml.cs",
               "ViewState": "AgIAAKQAAAAAAAAAAAAswMMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-23T03:03:46.816Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-23T03:03:46.816Z"
             },
             {
               "$type": "Document",
