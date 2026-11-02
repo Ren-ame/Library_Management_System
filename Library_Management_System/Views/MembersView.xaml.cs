@@ -134,7 +134,11 @@ namespace Library_Management_System.Views
                 var result = MessageBox.Show($"정말로 {selectedMember.Name} 회원을 삭제하시겠습니까?", "회원 삭제", MessageBoxButton.YesNo, MessageBoxImage.Warning);
                 if (result == MessageBoxResult.Yes)
                 {
-                    DbHelper.DeleteMember(selectedMember.MemberId);
+                    if (!DbHelper.DeleteMember(selectedMember.MemberId))
+                    {
+                        MessageBox.Show("대출 기록이 있는 회원은 삭제할 수 없습니다.", "삭제 불가", MessageBoxButton.OK, MessageBoxImage.Warning);
+                        return;
+                    }
                     LoadMembers();
                     ClearInputs();
                 }

@@ -156,7 +156,11 @@ namespace Library_Management_System.Views
                 var result = MessageBox.Show("삭제하시겠습니까?", "확인", MessageBoxButton.YesNo, MessageBoxImage.Warning);
                 if (result != MessageBoxResult.Yes) return;
 
-                DbHelper.DeleteBook(selectedBook.BookId);
+                if (!DbHelper.DeleteBook(selectedBook.BookId))
+                {
+                    MessageBox.Show("대출 기록이 있는 도서는 삭제할 수 없습니다.", "삭제 불가", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
                 LoadBooks();
                 ClearInputs();
             }

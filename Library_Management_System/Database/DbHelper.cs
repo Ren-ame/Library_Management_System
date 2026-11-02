@@ -11,7 +11,8 @@ namespace Library_Management_System.Database
 {
     public class DbHelper
     {
-        private static string _connectionString = "Data Source=library.db";
+        // Foreign Keys=True : 연결을 열 때마다 PRAGMA foreign_keys = ON 을 자동 실행 (SQLite는 기본이 OFF)
+        private static string _connectionString = "Data Source=library.db;Foreign Keys=True";
 
         public static void InitializeDatabase()
         {
@@ -46,10 +47,49 @@ namespace Library_Management_System.Database
                         MemberId INTEGER NOT NULL,
                         LoanDate TEXT NOT NULL,
                         DueDate TEXT NOT NULL,
-                        ReturnDate TEXT
+                        ReturnDate TEXT,
+                        FOREIGN KEY (BookId) REFERENCES Book(BookId),
+                        FOREIGN KEY (MemberId) REFERENCES Member(MemberId)
                     )", connection);
                 command.ExecuteNonQuery();
+
+                MigrateLoanForeignKeys(connection);
             } 
+        }
+
+        // 예전 버전으로 만든 library.db는 Loan 테이블에 FK가 없음
+        // CREATE TABLE IF NOT EXISTS는 기존 테이블을 바꾸지 않으므로, FK가 없으면 테이블을 다시 만들어 데이터를 옮김
+        private static void MigrateLoanForeignKeys(SqliteConnection connection)
+        {
+            var check = new SqliteCommand("SELECT COUNT(*) FROM pragma_foreign_key_list('Loan')", connection);
+            if (Convert.ToInt32(check.ExecuteScalar()) > 0) return;
+
+            // 테이블 교체 중에는 FK 검사를 잠시 끔 (트랜잭션 밖에서만 바꿀 수 있음)
+            new SqliteCommand("PRAGMA foreign_keys = OFF", connection).ExecuteNonQuery();
+
+            using (var transaction = connection.BeginTransaction())
+            {
+                var migrate = new SqliteCommand(
+                    @"CREATE TABLE Loan_new(
+                        LoanId INTEGER PRIMARY KEY AUTOINCREMENT,
+                        BookId INTEGER NOT NULL,
+                        MemberId INTEGER NOT NULL,
+                        LoanDate TEXT NOT NULL,
+                        DueDate TEXT NOT NULL,
+                        ReturnDate TEXT,
+                        FOREIGN KEY (BookId) REFERENCES Book(BookId),
+                        FOREIGN KEY (MemberId) REFERENCES Member(MemberId)
+                    );
+                    INSERT INTO Loan_new (LoanId, BookId, MemberId, LoanDate, DueDate, ReturnDate)
+                        SELECT LoanId, BookId, MemberId, LoanDate, DueDate, ReturnDate FROM Loan;
+                    DROP TABLE Loan;
+                    ALTER TABLE Loan_new RENAME TO Loan;",
+                    connection, transaction);
+                migrate.ExecuteNonQuery();
+                transaction.Commit();
+            }
+
+            new SqliteCommand("PRAGMA foreign_keys = ON", connection).ExecuteNonQuery();
         }
 
         #region Book
@@ -127,7 +167,8 @@ namespace Library_Management_System.Database
             }
         }
 
-        public static void DeleteBook(int BookId)
+        // 대출 기록이 있는 도서는 FK 제약 때문에 삭제되지 않음 → false 반환
+        public static bool DeleteBook(int BookId)
         {
             using (var connection = new SqliteConnection(_connectionString))
             {
@@ -139,7 +180,15 @@ namespace Library_Management_System.Database
 
                 command.Parameters.AddWithValue("@BookId", BookId);
 
-                command.ExecuteNonQuery();
+                try
+                {
+                    command.ExecuteNonQuery();
+                    return true;
+                }
+                catch (SqliteException ex) when (ex.SqliteErrorCode == 19) // SQLITE_CONSTRAINT
+                {
+                    return false;
+                }
             }
         }
 
@@ -268,7 +317,8 @@ namespace Library_Management_System.Database
             }
         }
 
-        public static void DeleteMember(int MemberId)
+        // 대출 기록이 있는 회원은 FK 제약 때문에 삭제되지 않음 → false 반환
+        public static bool DeleteMember(int MemberId)
         {
             using (var connection = new SqliteConnection(_connectionString))
             {
@@ -279,7 +329,15 @@ namespace Library_Management_System.Database
 
                 command.Parameters.AddWithValue("@MemberId", MemberId);
 
-                command.ExecuteNonQuery();
+                try
+                {
+                    command.ExecuteNonQuery();
+                    return true;
+                }
+                catch (SqliteException ex) when (ex.SqliteErrorCode == 19) // SQLITE_CONSTRAINT
+                {
+                    return false;
+                }
             }
         }
 
